@@ -1,0 +1,79 @@
+body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.timer {
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: center;
+}
+button {
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    background-image: url('button-bg.jpg'); /* или .png, если вы используете этот формат */
+    background-size: cover;
+    background-position: center;
+}
+.buttons {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+.buttons button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#word-display {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#team-scores {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 10px;
+}
+@media (max-width: 600px) {
+    .timer {
+        font-size: 1.5em;
+    }
+    #word-display {
+        font-size: 2em;
+    }
+    #team-scores {
+        font-size: 1.2em;
+    }
+}
